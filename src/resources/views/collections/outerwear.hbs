@@ -1,0 +1,95 @@
+<div class="container__products row">
+{{#each_when products 'select' 'OUTERWEAR'}}
+    <div class="products-inf col-md-3 col-md-6">
+        <div class="product__img" title="{{this.name}}">
+            <a href="/products/{{this.slug}}">
+                <div class="product__imgs product__img-front">
+                    <img src="{{this.imgf}}" alt="">
+                </div>
+                <div class="product__imgs product__img-backside">
+                    <img src="{{this.imgb}}" alt="">
+                </div>
+            </a>
+            <div class="product__buy-cart">
+                <button type="submit" title="Mua ngay" class="action" onclick="buy_now('1084585343')">Mua ngay</button>
+                <button type="submit" title="Thêm vào giỏ" class="action add-to-cart" data-variantid="1084585343">Thêm vào giỏ</button>
+            </div>
+        </div>
+        </a>
+        <div class="product__name-price font-oswald">
+            <a href="/products/{{this.slug}}" class="product__name font-oswald">
+                <h2>{{this.name}}</h2>
+            </a>
+            <div class="product__price">
+                {{this.price}}
+            </div>
+        </div>
+    </div>
+{{/each_when}}
+</div>
+
+<!-- START TEXT ANIMATION -->
+
+<div>
+    <div class="site-animation wrapper-heading-home wrapper-heading-home-instagram" style="text-align: center;padding-bottom: 10px;">
+        <div class="wrapper-animation2">
+
+            <span class="text-animation-2">
+                    <h2>
+                        <span>streetwear brand limited</span>
+            </h2>
+            </span>
+
+            <span class="text-animation-2">
+                    <h2>
+                        <span>streetwear brand limited</span>
+            </h2>
+            </span>
+
+            <span class="text-animation-2">
+                    <h2>
+                        <span>streetwear brand limited</span>
+            </h2>
+            </span>
+
+            <span class="text-animation-2">
+                    <h2>
+                        <span>streetwear brand limited</span>
+            </h2>
+            </span>
+
+            <span class="text-animation-2">
+                    <h2>
+                        <span>streetwear brand limited</span>
+            </h2>
+            </span>
+
+            <span class="text-animation-2">
+                    <h2>
+                        <span>streetwear brand limited</span>
+            </h2>
+            </span>
+
+            <span class="text-animation-2">
+                    <h2>
+                        <span>streetwear brand limited</span>
+            </h2>
+            </span>
+
+            <span class="text-animation-2">
+                    <h2>
+                        <span>streetwear brand limited</span>
+            </h2>
+            </span>
+
+            <span class="text-animation-2">
+                    <h2>
+                        <span>streetwear brand limited</span>
+            </h2>
+            </span>
+
+        </div>
+    </div>
+</div>
+
+<!-- END TEXT ANIMATION -->

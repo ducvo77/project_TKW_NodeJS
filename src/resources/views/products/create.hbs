@@ -1,0 +1,55 @@
+<div class='mt-4' style='margin: 20%;'>
+    <h3 class="edit-product-title">THÊM SẢN PHẨM</h3>
+
+    <form method='POST' action='/products/store'>
+
+        <select name="select" id="select">
+            <option value="HOME">HOME</option>
+            <option value="ALL">SHOP ALL</option>
+            <option value="TOPS">TOPS</option>
+            <option value="BOTTOMS">BOTTOMS</option>
+            <option value="OUTERWEAR">OUTERWEAR</option>
+            <option value="FOOTWEAR">FOOTWEAR</option>
+            <option value="HAT">HAT</option>
+            <option value="BAGS">BAGS</option>
+        </select>
+        <br><br>
+
+        <div class='form-group'>
+            <label for='name'>Tên sản phẩm</label>
+            <input type='text' class='form-control' id='name' name='name' />
+        </div>
+
+        <div class='form-group'>
+            <label for='sku'>SKU</label>
+            <input type='text' class='form-control' id='sku' name='sku' />
+        </div>
+
+        <div class='form-group'>
+            <label for='imgf'>Ảnh mặt trước</label>
+            <input type='text' class='form-control' id='imgf' name='imgf' />
+        </div>
+
+        <div class='form-group'>
+            <label for='imgb'>Ảnh mặt sau</label>
+            <input type='text' class='form-control' id='imgb' name='imgb' />
+        </div>
+
+        <div class='form-group'>
+            <label for='imgZoomf'>Ảnh zoom mặt trước</label>
+            <input type='text' class='form-control' id='imgZoomf' name='imgZoomf' />
+        </div>
+
+        <div class='form-group'>
+            <label for='imgZoomb'>Ảnh zoom mặt sau</label>
+            <input type='text' class='form-control' id='imgZoomb' name='imgZoomb' />
+        </div>
+
+        <div class='form-group'>
+            <label for='price'>Giá</label>
+            <input type='text' class='form-control' id='price' name='price' />
+        </div>
+
+        <button type='submit' class='btn btn-primary'>THÊM SẢN PHẨM</button>
+    </form>
+</div>

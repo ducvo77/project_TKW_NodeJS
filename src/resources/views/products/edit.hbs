@@ -1,0 +1,96 @@
+<div class='mt-80' style='padding: 0 20%;'>
+    <h3 class="edit-product-title">CẬP NHẬT SẢN PHẨM</h3>
+
+    <form class='mt-4' method='POST' action='/products/{{product._id}}?_method=PUT'>
+        <select name="select" id="select">
+            <option value="HOME">HOME</option>
+            <option value="ALL">SHOP ALL</option>
+            <option value="TOPS">TOPS</option>
+            <option value="BOTTOMS">BOTTOMS</option>
+            <option value="OUTERWEAR">OUTERWEAR</option>
+            <option value="FOOTWEAR">FOOTWEAR</option>
+            <option value="HAT">HAT</option>
+            <option value="BAGS">BAGS</option>
+        </select>
+        <br><br>
+
+        <div class='form-group'>
+            <label for='name'>Tên sản phẩm</label>
+            <input
+                type='text'
+                class='form-control'
+                value='{{product.name}}'
+                id='name'
+                name='name'
+            />
+        </div>
+
+        <div class='form-group'>
+            <label for='sku'>SKU</label>
+            <input
+                type='text'
+                class='form-control'
+                value='{{product.sku}}'
+                id='sku'
+                name='sku'
+            />
+        </div>
+
+        <div class='form-group'>
+            <label for='imgf'>Ảnh mặt trước</label>
+            <input
+                type='text'
+                class='form-control'
+                value='{{product.imgf}}'
+                id='imgf'
+                name='imgf'
+            />
+        </div>
+
+        <div class='form-group'>
+            <label for='imgb'>Ảnh mặt sau</label>
+            <input
+                type='text'
+                class='form-control'
+                value='{{product.imgb}}'
+                id='imgb'
+                name='imgb'
+            />
+        </div>
+
+        <div class='form-group'>
+            <label for='imgZoomf'>Ảnh Zoom mặt trước</label>
+            <input
+                type='text'
+                class='form-control'
+                value='{{product.imgZoomf}}'
+                id='imgZoomf'
+                name='imgZoomf'
+            />
+        </div>
+
+        <div class='form-group'>
+            <label for='imgZoomb'>Ảnh Zoom mặt sau</label>
+            <input
+                type='text'
+                class='form-control'
+                value='{{product.imgZoomb}}'
+                id='imgZoomb'
+                name='imgZoomb'
+            />
+        </div>
+
+        <div class='form-group'>
+            <label for='price'>Giá</label>
+            <input
+                type='text'
+                class='form-control'
+                value='{{product.price}}'
+                id='price'
+                name='price'
+            />
+        </div>
+
+        <button type='submit' class='btn btn-primary'>Lưu lại</button>
+    </form>
+</div>

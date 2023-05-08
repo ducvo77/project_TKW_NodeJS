@@ -1,0 +1,50 @@
+<main id="content" style=" margin-top: 66px">					
+    <div class="layout-account">
+        <div class="row">
+            <div>
+                <h2 class="title lang" keylanguage="dang_ky">Đăng ký</h2>
+            </div>
+            <div class="userbox">
+                        <form accept-charset="UTF-8" action="/account" id="create_customer" method="post">
+                        <input name="form_type" type="hidden" value="create_customer">
+                        <input name="utf8" type="hidden" value="✓">
+                        <div id="last_name" class="clearfix large_form">
+                            <label for="last_name" class="label icon-field"><i class="icon-login icon-user "></i></label>
+                            <input required="" type="text" value="" name="customer[last_name]" placeholder="Họ" id="last_name" class="text langplaceholder" keylanguage="ho" size="30">
+                        </div>
+                        <div id="first_name" class="clearfix large_form">
+                            <label for="first_name" class="label icon-field"><i class="icon-login icon-user "></i></label>
+                            <input required="" type="text" value="" name="customer[first_name]" placeholder="Tên" id="first_name" class="text langplaceholder" keylanguage="ten" size="30">
+                        </div>
+                        <div id="gender" class="clearfix large_form">
+                            <input id="radio1" type="radio" value="0" name="customer[gender]"> 
+                            <label for="radio1">
+                                <span class="lang" keylanguage="nu">Nữ</span>
+                            </label>
+                            <input id="radio2" type="radio" value="1" name="customer[gender]"> 
+                            <label for="radio2">
+                                <span class="lang" keylanguage="nam">Nam</span>
+                            </label>
+                        </div>
+                        <div id="birthday" class="clearfix large_form">
+                            <label for="birthday" class="label icon-field"><i class="icon-login icon-envelope "></i></label>
+                            <input type="text" value="" placeholder="mm/dd/yyyy" name="customer[birthday]" id="birthday" class="text" size="30">
+                        </div>
+                        <div id="email" class="clearfix large_form">
+                            <label for="email" class="label icon-field"><i class="icon-login icon-envelope "></i></label>
+                            <input required="" type="email" value="" placeholder="Email" name="customer[email]" id="email" class="text" size="30">
+                        </div>
+                        <div id="password" class="clearfix large_form">
+                            <label for="password" class="label icon-field"><i class="icon-login icon-shield "></i></label>
+                            <input required="" type="password" value="" placeholder="Mật khẩu" name="customer[password]" id="password" class="password text langplaceholder" keylanguage="mat_khau" size="30">
+                        </div>
+                        <div class="clearfix action_account_custommer">
+                            <div class="action_bottom button dark">
+                                <input class=" langValue login__footer-dn" keylanguage="dang_ky" type="submit" value="Đăng ký">			
+                            </div>						
+                        </div>         
+    <input id="93f12dade10a4f39b5d4aa75559bd057" name="g-recaptcha-response" type="hidden" value="03AGdBq24anTtzQWVFAmLjelkwRx0rEOw7NUIgQyVoekIcvIcD_G34tOXUpo8N5BOXD2bDcg4aGZ5ylIO5ZOeSo33fosl6yEJ17redX2Yn-TgXFDX8cekS3hWfMJ9qzrzCSyxLsnh89DXSR0u8wt8l00X0n6GV9Dybxo8SfwaSHjaGGyxTlefUL61NC545nGOj2IPakEAzkHfJ6DavD_QwVdKJVCnoGabdMDwVLvR4rFm3YnlFA1X9tVtrg5fn2CJxvS1IQGLSYLCdxPyeCeIXEum2tNj3ivA7Wl9NCrjZ9k-1jXgoMJS7HELb8owWCKPmQzjeorXvGfHjHqp1WFblf4o_mXrkZdf-ej0YbFZ0sn-Mh1Ue13GCm3V1btCMleAnjwDjkqpuwaTmEhn2YkJPhL_r4jZtvvDJH2DRw7PS3os9UjQ6Sr-1dTyA0qjYfUfQNMbu01an9ULb"><script src="https://www.google.com/recaptcha/api.js?render=6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-"></script><script>grecaptcha.ready(function() {grecaptcha.execute('6LdD18MUAAAAAHqKl3Avv8W-tREL6LangePxQLM-', {action: 'submit'}).then(function(token) {document.getElementById('93f12dade10a4f39b5d4aa75559bd057').value = token;});});</script></form>
+            </div>
+        </div>
+    </div>
+</main>
